@@ -1,5 +1,5 @@
 ol.proj.proj4.register(proj4);
-//ol.proj.get("EPSG:4326").setExtent([105.165619, -5.594825, 105.386144, -5.082619]);
+//ol.proj.get("EPSG:4326").setExtent([104.405220, -6.663134, 105.665295, -3.736399]);
 var wms_layers = [];
 
 var format_PetaLampung_0 = new ol.format.GeoJSON();
@@ -53,11 +53,11 @@ var layersList = [lyr_PetaLampung_0,lyr_TitikKoordinat_1,lyr_Jalan_2];
 lyr_PetaLampung_0.set('fieldAliases', {'GID_0': 'GID_0', 'NAME_0': 'NAME_0', 'GID_1': 'GID_1', 'NAME_1': 'NAME_1', 'NL_NAME_1': 'NL_NAME_1', 'GID_2': 'GID_2', 'NAME_2': 'NAME_2', 'VARNAME_2': 'VARNAME_2', 'NL_NAME_2': 'NL_NAME_2', 'TYPE_2': 'TYPE_2', 'ENGTYPE_2': 'ENGTYPE_2', 'CC_2': 'CC_2', 'HASC_2': 'HASC_2', });
 lyr_TitikKoordinat_1.set('fieldAliases', {'fid': 'fid', 'Longitude': 'Longitude', 'Latitude': 'Latitude', 'Title': 'Title', 'Foto': 'Foto', });
 lyr_Jalan_2.set('fieldAliases', {'id': 'id', 'Nama Jalan': 'Nama Jalan', });
-lyr_PetaLampung_0.set('fieldImages', {'GID_0': '', 'NAME_0': '', 'GID_1': '', 'NAME_1': '', 'NL_NAME_1': '', 'GID_2': '', 'NAME_2': '', 'VARNAME_2': '', 'NL_NAME_2': '', 'TYPE_2': '', 'ENGTYPE_2': '', 'CC_2': '', 'HASC_2': '', });
+lyr_PetaLampung_0.set('fieldImages', {'GID_0': 'TextEdit', 'NAME_0': 'TextEdit', 'GID_1': 'TextEdit', 'NAME_1': 'TextEdit', 'NL_NAME_1': 'TextEdit', 'GID_2': 'TextEdit', 'NAME_2': 'TextEdit', 'VARNAME_2': 'TextEdit', 'NL_NAME_2': 'TextEdit', 'TYPE_2': 'TextEdit', 'ENGTYPE_2': 'TextEdit', 'CC_2': 'TextEdit', 'HASC_2': 'TextEdit', });
 lyr_TitikKoordinat_1.set('fieldImages', {'fid': 'TextEdit', 'Longitude': 'TextEdit', 'Latitude': 'TextEdit', 'Title': 'TextEdit', 'Foto': 'ExternalResource', });
 lyr_Jalan_2.set('fieldImages', {'id': 'TextEdit', 'Nama Jalan': 'TextEdit', });
-lyr_PetaLampung_0.set('fieldLabels', {'GID_0': 'no label', 'NAME_0': 'no label', 'GID_1': 'no label', 'NAME_1': 'no label', 'NL_NAME_1': 'no label', 'GID_2': 'no label', 'NAME_2': 'no label', 'VARNAME_2': 'no label', 'NL_NAME_2': 'no label', 'TYPE_2': 'no label', 'ENGTYPE_2': 'no label', 'CC_2': 'no label', 'HASC_2': 'no label', });
-lyr_TitikKoordinat_1.set('fieldLabels', {'fid': 'no label', 'Longitude': 'no label', 'Latitude': 'no label', 'Title': 'no label', 'Foto': 'no label', });
+lyr_PetaLampung_0.set('fieldLabels', {'GID_0': 'no label', 'NAME_0': 'no label', 'GID_1': 'no label', 'NAME_1': 'no label', 'NL_NAME_1': 'no label', 'GID_2': 'no label', 'NAME_2': 'inline label - always visible', 'VARNAME_2': 'no label', 'NL_NAME_2': 'no label', 'TYPE_2': 'no label', 'ENGTYPE_2': 'no label', 'CC_2': 'no label', 'HASC_2': 'no label', });
+lyr_TitikKoordinat_1.set('fieldLabels', {'fid': 'no label', 'Longitude': 'no label', 'Latitude': 'no label', 'Title': 'inline label - always visible', 'Foto': 'inline label - always visible', });
 lyr_Jalan_2.set('fieldLabels', {'id': 'inline label - always visible', 'Nama Jalan': 'inline label - always visible', });
 lyr_Jalan_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
